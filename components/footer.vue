@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-slate-800">
+  <footer class="bg-black/70">
     <nav>
       <ul>
         <li><a href='#about'>about</a></li>

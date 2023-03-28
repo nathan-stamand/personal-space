@@ -6,6 +6,5 @@ import Footer from '../components/footer.vue';
     <Nuxt />
     <Footer />
     <!-- TODO: remove before deploying -->
-     <script src="https://cdn.tailwindcss.com"></script> 
   </div>
 </template>

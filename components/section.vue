@@ -1,5 +1,5 @@
 <template>
-  <section :class="styles" class="py-16 px-5 bg-cyan-900">
+  <section :class="[styles, $store.state.color]" class="py-16 px-5">
     <slot />
   </section>
 </template>
