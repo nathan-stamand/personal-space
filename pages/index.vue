@@ -45,6 +45,7 @@
         <div class="flex flex-row flex-wrap justify-center gap-6 mt-10">
           <ProjectCard
             v-for="project in projects"
+            :key="project.title"
             :title="project.title"
             :description="project.description"
             :link="project.link"
