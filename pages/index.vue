@@ -20,8 +20,7 @@
       <Hopscotch>
         <h2 class="text-3xl font-bold">About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro. </p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam <strong>deserunt</strong> consectetur tenetur ut assumenda porro.
         </p>
@@ -36,11 +35,51 @@
       </div>
     </Section>
 
+    <Section>
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="max-w-3xl mx-auto mb-7 text-3xl font-bold">My Projects</h2>
+        <p class="max-w-3xl mx-auto">
+          Here are some projects I've built in my free time. My current personal development environment is a 
+          Thinkpad with EndeavorOS (an Arch-based Linux distro) and NeoVim as a text editor.</p>
+
+        <div class="flex flex-row flex-wrap justify-center gap-6 mt-10">
+          <ProjectCard
+            v-for="project in projects"
+            :title="project.title"
+            :description="project.description"
+            :link="project.link"
+            :github="project.github"
+            :image="project.image"
+          />
+        </div>
+      </div>
+    </Section>
+
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      projects: [
+        {
+          title: 'Project 1',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.',
+          link: 'https://www.google.com',
+          github: 'https://github.com',
+          image: 'https://picsum.photos/300/200'
+        },
+        {
+          title: 'Project 2',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.',
+          link: 'https://www.google.com',
+          github: 'https://github.com',
+          image: 'https://picsum.photos/300/200'
+        },
+      ]
+    }
+  },
   head: {
     title: 'Home Page',
     meta: [
