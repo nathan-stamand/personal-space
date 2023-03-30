@@ -2,10 +2,9 @@
   <footer class="bg-black/70">
     <nav>
       <ul>
-        <li><a href='#about'>about</a></li>
-        <li><a href='#projects'>projects</a></li>
-        <li><a href='/resume'>resume</a></li>
-        <li><a href='#links'>links</a></li>
+        <li v-for="item in menuitems">
+          <a target="_blank" :href='item.href'>{{ item.text }}</a>
+        </li>
       </ul>
     </nav>
   </footer>
@@ -13,6 +12,14 @@
 
 <script>
 export default {
+  data() {
+    return {
+      menuitems: [
+        { text: 'LinkedIn', href: 'https://www.linkedin.com/in/nathan-st-amand/' },
+        { text: 'GitHub', href: 'https://github.com/nathan-stamand/' },
+      ],
+    }
+  },
   name: 'Footer'
 }
 </script>

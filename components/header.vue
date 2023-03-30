@@ -27,7 +27,7 @@
       </button>
       <ul class="flex flex-col w-full h-full">
         <li v-for="item in menuitems" class="px-4 py-2" role="none">
-          <a @mouseover="changeColor" class="p-2 px-5 rounded-lg inline-block transition-colors duration-250 bg-transparent hover:bg-white/40" :href='item.href' role="menuitem">{{ item.text }}</a>
+          <a @mouseover="changeColor" class="p-2 px-5 rounded-lg inline-block transition-colors duration-250 bg-transparent hover:bg-white/20" :href='item.href' role="menuitem">{{ item.text }}</a>
         </li>
       </ul>
     </nav>
@@ -36,7 +36,7 @@
     <nav class="max-w-7xl mx-auto block hidden lg:block" id="main-menu" role="menu">
       <ul class="flex flex-row justify-around items-center">
         <li v-for="item in menuitems" class="p-2" role="none">
-          <a @mouseover="changeColor" class="py-2 px-5 rounded-lg inline-block transition-colors duration-250 bg-transparent hover:bg-black/50" :href='item.href' role="menuitem">{{ item.text }}</a>
+          <a @mouseover="changeColor" class="py-2 px-5 rounded-lg inline-block transition-colors duration-250 bg-transparent hover:bg-white/20" :href='item.href' role="menuitem">{{ item.text }}</a>
         </li>
       </ul>
     </nav>
@@ -50,7 +50,7 @@ export default {
       menuitems: [
         { text: 'home', href: '/' },
         { text: 'about', href: '#about' },
-        { text: 'projects', href: '/projects' },
+        { text: 'projects', href: '#projects' },
         { text: 'resume', href: '/resume' },
         { text: 'links', href: '#links' },
       ],

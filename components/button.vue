@@ -1,6 +1,6 @@
 <template>
   <a :href="link" :target="target" class="
-    block relative w-fit bg-black/50 focus:bg-black/90 hover:bg-black/90 transition-colors duration-500 px-6 py-3 lowercase overflow-hidden
+    block relative w-fit bg-black/50 focus:bg-black/90 hover:bg-black/90 transition-colors duration-500 px-6 py-3 lowercase 
 
     before:content-[''] before:absolute before:block before:transition-transform before:left-0 before:top-0 
     before:border-amber-100 before:w-full before:border-l before:border-t before:duration-500
@@ -22,6 +22,7 @@
     props: {
       target: String,
       link: String,
+      styles: String,
     }
   }
 </script>
