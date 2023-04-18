@@ -1,5 +1,3 @@
-// build project card in vue
-
 <template>
   <div class="bg-black/30 rounded-lg shadow-lg overflow-hidden basis-full md:basis-5/12 lg:basis-0 flex-shrink flex-grow-0 lg:flex-grow">
     <img class="w-full" :src="image" :alt="title" />

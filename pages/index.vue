@@ -11,16 +11,17 @@
         after:content-[''] after:w-full after:h-full after:animate-shift-tl after:top-0 after:left-0
         after:absolute after:z-0 after:bg-white/20 after:rounded-lg
       ">
-        <img src="https://i.pravatar.cc/300" alt="c'est moi" class="relative z-10 rounded-lg shadow-black/60 shadow-2xl" />
+        <img src="https://i.pravatar.cc/300" alt="Ya Boi" width="300" height="300" class="relative z-10 rounded-lg shadow-black/60 shadow-2xl" />
       </div>
-      <h1 class="text-center text-3xl font-bold bg-black/50 w-fit px-4 py-2 mx-auto">&lt;nathan st.amand /&gt;</h1>
+      <PageTitle>&lt;nathan st.amand /&gt;</PageTitle>
     </Main>
 
-    <Section>
+    <Section id="about">
       <Hopscotch>
         <h2 class="text-3xl font-bold">About Me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam <strong>deserunt</strong> consectetur tenetur ut assumenda porro.
         </p>
@@ -31,18 +32,18 @@
     <Section styles="bg-section-bg bg-blend-multiply bg-center bg-fixed">
       <div class="max-w-7xl mx-auto text-center">
         <h2 class="mb-7 text-3xl font-bold">Check out my experience</h2>
-        <Nuxtbutton class="mx-auto" to="/resume">My Resume</Nuxtbutton>
+        <NuxtButton class="mx-auto" to="/resume">My Resume</NuxtButton>
       </div>
     </Section>
 
-    <Section>
+    <Section id="projects">
       <div class="max-w-7xl mx-auto text-center">
         <h2 class="max-w-3xl mx-auto mb-7 text-3xl font-bold">My Projects</h2>
         <p class="max-w-3xl mx-auto">
-          Here are some projects I've built in my free time. My current personal development environment is a 
+          Here are some projects I've built in my free time. My current personal development environment is a
           Thinkpad with EndeavorOS (an Arch-based Linux distro) and NeoVim as a text editor.</p>
 
-        <div class="flex flex-row flex-wrap justify-center gap-6 mt-10">
+        <div class="flex flex-row flex-wrap justify-center gap-6 mt-10 md:-mx-16 lg:mx-0">
           <ProjectCard
             v-for="project in projects"
             :key="project.title"
@@ -66,6 +67,13 @@ export default {
       projects: [
         {
           title: 'Project 1',
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.',
+          link: 'https://www.google.com',
+          github: 'https://github.com',
+          image: 'https://picsum.photos/300/200'
+        },
+        {
+          title: 'Project 2',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.',
           link: 'https://www.google.com',
           github: 'https://github.com',

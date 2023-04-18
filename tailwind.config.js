@@ -13,16 +13,17 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "body-bg": "url('assets/images/body-background.jpg')",
-        "section-bg": "url('assets/images/section-bg.jpg')"
+        "home-bg": "url('assets/images/body-background.jpg')",
+        "section-bg": "url('assets/images/section-bg.jpg')",
+        "resume-bg": "url('assets/images/resume-bg.jpg')",
       },
       keyframes: {
         'shiftDownRight': {
-          "0%, 20%, 75%, 100%": { 
-            transform: "translate(0px, 0px)" 
+          "0%, 20%, 75%, 100%": {
+            transform: "translate(0px, 0px)"
           },
           "25%, 70%": {
-            transform: "translate(15px, 15px)" 
+            transform: "translate(15px, 15px)"
           }
         },
         "shiftTopLeft": {
