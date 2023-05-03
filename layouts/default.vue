@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-cyan-800 text-amber-100">
+  <div class="bg-black/80 text-amber-100">
     <Header />
     <Nuxt />
     <Footer />
