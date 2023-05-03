@@ -1,7 +1,15 @@
 <template>
-  <div class="max-w-7xl w-full gap-8 flex flex-col lg:items-center lg:flex-row mx-auto">
+  <div
+    class="max-w-7xl w-full gap-8 flex flex-col lg:items-center lg:flex-row mx-auto"
+  >
     <div class="basis-6/12">
-      <img src="https://picsum.photos/600" alt="PLACEHOLDER" class="rounded-lg shadow-black/60 shadow-2xl m-auto lg:m-0">
+      <img
+        src="https://picsum.photos/600"
+        width="600"
+        height="600"
+        alt="PLACEHOLDER"
+        class="rounded-lg shadow-black/60 shadow-2xl m-auto lg:m-0"
+      />
     </div>
 
     <div class="basis-6/12 flex flex-col gap-5">
@@ -12,6 +20,6 @@
 
 <script>
 export default {
-  name: 'Hopscotch'
-}
+  name: "Hopscotch",
+};
 </script>
