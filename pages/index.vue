@@ -81,6 +81,7 @@ export default {
           title: "This Very Portfolio Site!",
           description:
             "If it's a cop out to cite my portfolio as a project within itself, then this site's a police state! Badum tiss",
+          link: "",
           github: "https://github.com",
           image: "https://picsum.photos/900/500",
         },
