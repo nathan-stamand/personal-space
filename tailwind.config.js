@@ -1,8 +1,8 @@
-const { warn } = require('console');
+const { warn } = require("console");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
+  content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -16,26 +16,27 @@ module.exports = {
         "home-bg": "url('assets/images/body-background.jpg')",
         "section-bg": "url('assets/images/section-bg.jpg')",
         "resume-bg": "url('assets/images/resume-bg.jpg')",
+        "resume-tech": "url('assets/images/tech.jpg')",
       },
       keyframes: {
-        'shiftDownRight': {
+        shiftDownRight: {
           "0%, 20%, 75%, 100%": {
-            transform: "translate(0px, 0px)"
+            transform: "translate(0px, 0px)",
           },
           "25%, 70%": {
-            transform: "translate(15px, 15px)"
-          }
+            transform: "translate(15px, 15px)",
+          },
         },
-        "shiftTopLeft": {
+        shiftTopLeft: {
           "0%, 25%, 80%, 100%": { transform: "translate(0px, 0px)" },
-          "30%, 75%": { transform: "translate(-15px, -15px)" }
-        }
+          "30%, 75%": { transform: "translate(-15px, -15px)" },
+        },
       },
       animation: {
         "shift-dr": "shiftDownRight 4s linear infinite",
         "shift-tl": "shiftTopLeft 4s linear infinite",
-      }
+      },
     },
   },
   plugins: [],
-}
+};

@@ -33,7 +33,9 @@
           laudantium adipisci nemo, odit totam. Totam
           <strong>deserunt</strong> consectetur tenetur ut assumenda porro.
         </p>
-        <Button link="#####" target="_blank">Button!</Button>
+        <Button link="https://github.com/nathan-stamand" target="_blank"
+          >My Github</Button
+        >
       </Hopscotch>
     </Section>
 
@@ -79,22 +81,21 @@ export default {
           title: "This Very Portfolio Site!",
           description:
             "If it's a cop out to cite my portfolio as a project within itself, then this site's a police state! Badum tiss",
-          link: "javascript:void()",
           github: "https://github.com",
           image: "https://picsum.photos/900/500",
         },
         {
-          title: "Project 2",
+          title: "Chat Noir",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.",
+            "Just a little chat I used to learn more about Socket.io, and to practice with Node, Express, and MongoDB",
           link: "https://www.google.com",
           github: "https://github.com",
           image: "https://picsum.photos/1700/600",
         },
         {
-          title: "Project 2",
+          title: "Quarto!",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eos expedita commodi dolorum possimus iure incidunt dolor ratione laudantium adipisci nemo, odit totam. Totam deserunt consectetur tenetur ut assumenda porro.",
+            "Based on a board game I saw at a shop one time! Too cheap to buy Overcomplicated Tic-Tac-Toe, I built it with React instead.",
           link: "https://www.google.com",
           github: "https://github.com",
           image: "https://picsum.photos/300/200",
