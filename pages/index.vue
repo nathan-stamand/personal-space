@@ -2,15 +2,9 @@
   <div>
     <Main>
       <div
-        class="w-fit block mx-auto my-10 relative rounded-lg before:content-[''] before:w-full before:h-full before:border-4 before:border-amber-100 before:absolute before:top-0 before:left-0 before:z-20 before:bg-slate-900/20 before:rounded-lg before:animate-shift-dr after:content-[''] after:w-full after:h-full after:animate-shift-tl after:top-0 after:left-0 after:absolute after:z-0 after:bg-white/20 after:rounded-lg"
-      >
-        <img
-          src="https://i.pravatar.cc/300"
-          alt="A real, actual picture of me."
-          width="300"
-          height="300"
-          class="relative z-10 rounded-lg shadow-black/60 shadow-2xl"
-        />
+        class="w-fit block mx-auto my-10 relative rounded-lg before:content-[''] before:w-full before:h-full before:border-4 before:border-amber-100 before:absolute before:top-0 before:left-0 before:z-20 before:bg-slate-900/20 before:rounded-lg before:animate-shift-dr after:content-[''] after:w-full after:h-full after:animate-shift-tl after:top-0 after:left-0 after:absolute after:z-0 after:bg-white/20 after:rounded-lg">
+        <img src="https://i.pravatar.cc/300" alt="A real, actual picture of me." width="300" height="300"
+          class="relative z-10 rounded-lg shadow-black/60 shadow-2xl" />
       </div>
       <PageTitle>&lt;nathan st.amand /&gt;</PageTitle>
     </Main>
@@ -33,9 +27,7 @@
           laudantium adipisci nemo, odit totam. Totam
           <strong>deserunt</strong> consectetur tenetur ut assumenda porro.
         </p>
-        <Button link="https://github.com/nathan-stamand" target="_blank"
-          >My Github</Button
-        >
+        <Button link="https://github.com/nathan-stamand" target="_blank">My Github</Button>
       </Hopscotch>
     </Section>
 
@@ -54,18 +46,9 @@
           judge my worth!
         </p>
 
-        <div
-          class="flex flex-row flex-wrap justify-center mt-10 gap-y-6 -mx-3 lg:mx-0"
-        >
-          <ProjectCard
-            v-for="project in projects"
-            :key="project.title"
-            :title="project.title"
-            :description="project.description"
-            :link="project.link"
-            :github="project.github"
-            :image="project.image"
-          />
+        <div class="flex flex-row flex-wrap justify-center mt-10 gap-y-6 -mx-3 lg:mx-0">
+          <ProjectCard v-for="project in projects" :key="project.title" :title="project.title"
+            :description="project.description" :link="project.link" :github="project.github" :image="project.image" />
         </div>
       </div>
     </Section>
@@ -82,23 +65,23 @@ export default {
           description:
             "If it's a cop out to cite my portfolio as a project within itself, then this site's a police state! Badum tiss",
           link: "",
-          github: "https://github.com",
+          github: "https://github.com/nathan-stamand/personal-space",
           image: "https://picsum.photos/900/500",
         },
         {
           title: "Chat Noir",
           description:
             "Just a little chat I used to learn more about Socket.io, and to practice with Node, Express, and MongoDB",
-          link: "https://www.google.com",
-          github: "https://github.com",
+          link: "https://chat-noir-285o.onrender.com/",
+          github: "https://github.com/nathan-stamand/chat-noir",
           image: "https://picsum.photos/1700/600",
         },
         {
           title: "Quarto!",
           description:
             "Based on a board game I saw at a shop one time! Too cheap to buy Overcomplicated Tic-Tac-Toe, I built it with React instead.",
-          link: "https://www.google.com",
-          github: "https://github.com",
+          link: "https://quarto.onrender.com/",
+          github: "https://github.com/nathan-stamand/quarto",
           image: "https://picsum.photos/300/200",
         },
       ],
