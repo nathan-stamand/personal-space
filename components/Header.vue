@@ -14,10 +14,11 @@
     <nav v-show="showMenu"
       class="max-w-xs text-right w-full bg-black h-screen mx-auto block lg:hidden absolute top-0 right-0"
       id="main-menu-mobile" role="menu">
-      <button aria-label="Show Mobile Menu" @click="showMenu = false" class="text-2xl py-4 px-8 inline-block">
+      <button aria-label="Show Mobile Menu" role="button" @click="showMenu = false"
+        class="text-2xl py-4 px-8 inline-block">
         &times;
       </button>
-      <ul class="flex flex-col w-full h-full">
+      <ul class="flex flex-col w-full h-full" role="menubar">
         <li v-for="item in menuitems" class="px-4 py-2" role="none">
           <a @mouseover="changeColor"
             class="p-2 px-5 rounded-lg inline-block transition-colors duration-250 bg-transparent hover:bg-white/20"
@@ -28,7 +29,7 @@
 
     <!-- Large Menu -->
     <nav class="max-w-7xl mx-auto hidden lg:block" id="main-menu" role="menu">
-      <ul class="flex flex-row justify-around items-center">
+      <ul class="flex flex-row justify-around items-center" role="menubar">
         <li v-for="item in menuitems" class="p-2" role="none">
           <a @mouseover="changeColor"
             class="py-2 px-5 rounded-lg inline-block transition-colors duration-250 bg-transparent hover:bg-white/20"
